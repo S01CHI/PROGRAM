@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.rawgit.com/balzss/luxbar/ae5835e2/build/luxbar.min.css"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/index-res.css" />
+    <link rel="stylesheet" href="../css/text.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header id="luxbar" class="luxbar-fixed">
+        <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox" />
+        <div class="luxbar-menu luxbar-menu-right luxbar-menu-material-indigo">
+          <ul class="luxbar-navigation">
+            <li class="luxbar-header">
+              <a href="index.html" class="luxbar-brand"
+                ><h1 class="logo">Img To Note</h1></a
+              >
+              <label
+                class="luxbar-hamburger luxbar-hamburger-doublespin"
+                id="luxbar-hamburger"
+                for="luxbar-checkbox"
+              >
+                <span></span>
+              </label>
+            </li>
+            <li class="luxbar-item"><a href="./text.html">テキスト抽出</a></li>
+            <li class="luxbar-item"><a href="#">your Note</a></li>
+            <li class="luxbar-item"><a href="#">ユーザー情報</a></li>
+            <li class="luxbar-item"><a href="#">ログアウト</a></li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="text-main">
+        <article>
+          <h2 class="text-title">さぁ、画像からテキストを抽出してみよう！</h2>
+
+          <input type="file" />
+          <button type="submit">変換する</button>
+          <div class="convert-box"></div>
+          <div class="btn-wrap">
+            <button type="button">COPY</button>
+            <button type="button">Noteに保存</button>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <small>&copy;Img To Note,inc</small>
+      </footer>
+    </div>
+  </body>
+</html>
